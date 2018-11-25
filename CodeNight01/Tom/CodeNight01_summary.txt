@@ -2,7 +2,7 @@ What I've Done:
     - Coded up F-H model, plot phase plane using ODE45. 
     - Turned it into VDP model for` simplicity
     - Plotted graphs of max amplitude against bifurcation parameter
-    - Ran using \texttt{parfor} to speed up 100 runs, seems deterministic -- no variety in output. True behaviour or quirk of ODE solver?
+    - Ran using parfor to speed up 100 runs, seems deterministic -- no variety in output. True behaviour or quirk of ODE solver?
     - Tweaked parameters playing with behaviour, seemed to have got canard/behaviour switching.
 
 What I'm Proud Of:
