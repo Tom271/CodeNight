@@ -14,24 +14,24 @@ function FNPlot = FNPlot(epsilon,a,b,g,tSpan,initialValue)
     fold2=-fold1;
     equil=[a/b,fdot(a/b)];
     %%%%%%PLOTS%%%%%%%%
-%         fig=figure();
-%         set(fig,'color','white')    
-% 
-%         [quivx,quivy]=meshgrid(-1.5:0.1:1.5);
-%         dquivx=quivx-quivx.^3+quivy;
-%         dquivy=epsilon*(a-b*quivx-g*quivy);
-%         
-%         hold on
-%         quiver(quivx,quivy,dquivx,dquivy,'Color','b')
-%         plot(x(:,1),x(:,2),'-','color','r')
-%         plot(fold1(1),fold1(2),'g-s','MarkerFaceColor','g','MarkerSize',10)
-%         plot(fold2(1),fold2(2),'g-s','MarkerFaceColor','g','MarkerSize',10)
-%         plot(equil(1),equil(2),'b-s','MarkerFaceColor','b','MarkerSize',10)
-% 
-%         nullx=linspace(-1.5,1.5);
-%         nully=nullx;
-%         plot(nullx,nullx.^3-nullx,'--','LineWidth',1.5,'Color',1/255*[150,150,150]);
-%         plot((a-g*nully)/b,nully,'--','LineWidth',1.5,'Color',1/255*[150,150,150]);
+        fig=figure();
+        set(fig,'color','white')    
+
+        [quivx,quivy]=meshgrid(-1.5:0.1:1.5);
+        dquivx=quivx-quivx.^3+quivy;
+        dquivy=epsilon*(a-b*quivx-g*quivy);
+        
+        hold on
+        quiver(quivx,quivy,dquivx,dquivy,'Color','b')
+        plot(x(:,1),x(:,2),'-','color','r')
+        plot(fold1(1),fold1(2),'g-s','MarkerFaceColor','g','MarkerSize',10)
+        plot(fold2(1),fold2(2),'g-s','MarkerFaceColor','g','MarkerSize',10)
+        plot(equil(1),equil(2),'b-s','MarkerFaceColor','b','MarkerSize',10)
+
+        nullx=linspace(-1.5,1.5);
+        nully=nullx;
+        plot(nullx,nullx.^3-nullx,'--','LineWidth',1.5,'Color',1/255*[150,150,150]);
+        plot((a-g*nully)/b,nully,'--','LineWidth',1.5,'Color',1/255*[150,150,150]);
     %%%%%%%END PLOTS%%%%%%%
     FNPlot=x;
 end
