@@ -1,0 +1,14 @@
+What I've done:
+- Return pageviews for pages in wikipedia
+  - can be any page but I'm looking at FTSE 100 companies
+  - can plot multiple pageviews
+- Return historic price data for FTSE 100 Companies
+
+What I'm proud of:
+- Used two APIs with no major faults, had no huge technical problems in this project
+- My volume of output: 200 lines of code in 4 hours, ~10 functions
+
+What to do looking ahead:
+- Code clean up
+- Match up stock prices and wiki page views over specific date ranges
+- Run some kind of statistical correlation
