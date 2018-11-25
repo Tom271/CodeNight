@@ -4,6 +4,7 @@ function FNPlot = FNPlot(epsilon,a,b,g,tSpan,initialValue)
     assert(epsilon>=0 & tSpan>0)
     
     [t,x]=ode45(@(t,x) FN(t,x,epsilon,a,b,g), [0,tSpan], initialValue);
+    %NEXT: write own ode solver, add noise
     
     ffun=@(x,y) x-x.^3+y;
     gfun=@(x,y) a-b*x-g*y;
